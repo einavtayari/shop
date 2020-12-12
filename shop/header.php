@@ -68,7 +68,9 @@
 <div class="list-group py-4">
     <a class="list-group-item" href="index.php">All Products</a>
     <?php
+        //רשימת קטגוריות בצד העמוד
         $categories = mysqli_query($conn, 'SELECT ID, Title FROM categories');
+
 
         foreach ($categories as $category) {
     ?>
